@@ -1,0 +1,117 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    position: sticky;
+    top: 0;
+    border: solid black 2px;
+
+    background-color: gray;
+    height: 95px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+}
+nav li{
+    list-style-type: none;
+    margin: 10px;
+    border: solid gray 5px;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: yellow;
+}
+nav li:hover{
+    background-color: black;
+}
+.content{
+    border: solid #add8e6 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: #c8e9f5;
+    margin-bottom: 20px;
+
+}
+.headings{
+    margin: 5px;
+    justify-content: center;
+    align-items:flex-start ;
+}
+.pharagraph{
+  margin: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.images{
+    margin: 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+body{
+    background-color: #add8e6;
+}
+.contentabout{
+    border: solid #add8e6 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c8e9f5;
+    margin-bottom: 20px;}
+    #ima{
+        border: solid black 2px;
+
+    }
+    h1{
+        color: rgb(72, 72, 72);
+    }
+    @media screen and (max-width: 768px) {
+    nav {
+        position: static;
+        height: auto;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .images {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contentabout, .content {
+        padding: 20px;
+    }
+}
